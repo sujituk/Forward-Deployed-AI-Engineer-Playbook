@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="427c406a2f5072104163174fafa4e35e" extends="task" max_length="40" name="u_skplayground_deep_research" type="collection">
+        <element choice="3" label="Status" mandatory="true" max_length="40" name="u_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+            </choice>
+        </element>
+        <element choice="3" label="Stage" mandatory="true" max_length="40" name="u_stage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+                <element inactive_on_update="false" label="Not started" sequence="0" value="not_started"/>
+            </choice>
+        </element>
+    </element>
+</database>
