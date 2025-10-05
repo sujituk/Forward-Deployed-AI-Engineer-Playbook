@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
     <sys_db_object action="INSERT_OR_UPDATE">
-        <access/>
+        <access>public</access>
         <actions_access>true</actions_access>
         <alter_access>true</alter_access>
         <caller_access/>
@@ -16,7 +16,7 @@
         <label>AI Compliant Deep Research</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>u_skplayground_deep_research</name>
-        <number_ref/>
+        <number_ref display_value="CDR">7e39f7972f5472104163174fafa4e382</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
@@ -25,14 +25,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-10-02 22:36:07</sys_created_on>
         <sys_id>427c406a2f5072104163174fafa4e35e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>AI Compliant Deep Research</sys_name>
         <sys_package display_value="AI Compliant Deep Research" source="010ac0ea2f1072104163174fafa4e301">010ac0ea2f1072104163174fafa4e301</sys_package>
         <sys_policy/>
         <sys_scope display_value="AI Compliant Deep Research">010ac0ea2f1072104163174fafa4e301</sys_scope>
         <sys_update_name>sys_db_object_427c406a2f5072104163174fafa4e35e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-10-02 22:36:09</sys_updated_on>
+        <sys_updated_on>2025-10-05 23:46:01</sys_updated_on>
         <update_access>true</update_access>
         <user_role/>
         <ws_access>true</ws_access>

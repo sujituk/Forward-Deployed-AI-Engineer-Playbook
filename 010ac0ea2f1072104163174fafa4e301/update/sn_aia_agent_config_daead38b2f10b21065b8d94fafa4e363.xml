@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_config">
+    <sn_aia_agent_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="CMDB Impact Agent">89389b0f2f1cf2104163174fafa4e335</agent>
+        <doc_url/>
+        <icon_url/>
+        <public>false</public>
+        <run_as_user/>
+        <sys_class_name>sn_aia_agent_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-05 02:55:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>daead38b2f10b21065b8d94fafa4e363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="AI Compliant Deep Research" source="010ac0ea2f1072104163174fafa4e301">010ac0ea2f1072104163174fafa4e301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Compliant Deep Research">010ac0ea2f1072104163174fafa4e301</sys_scope>
+        <sys_update_name>sn_aia_agent_config_daead38b2f10b21065b8d94fafa4e363</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-05 02:55:03</sys_updated_on>
+    </sn_aia_agent_config>
+</record_update>

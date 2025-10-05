@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team">
+    <sn_aia_team action="INSERT_OR_UPDATE">
+        <description>undefined</description>
+        <name>CMDB Asset Impact Analyser</name>
+        <sys_class_name>sn_aia_team</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-05 02:47:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>51491f432f5cf2104163174fafa4e3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CMDB Asset Impact Analyser</sys_name>
+        <sys_package display_value="AI Compliant Deep Research" source="010ac0ea2f1072104163174fafa4e301">010ac0ea2f1072104163174fafa4e301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Compliant Deep Research">010ac0ea2f1072104163174fafa4e301</sys_scope>
+        <sys_update_name>sn_aia_team_51491f432f5cf2104163174fafa4e3cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-05 02:47:53</sys_updated_on>
+    </sn_aia_team>
+</record_update>

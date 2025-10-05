@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="INSERT_OR_UPDATE">
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <base_plan/>
+        <description>undefined</description>
+        <execution_mode>copilot</execution_mode>
+        <internal_name>global.global.CMDB Asset Impact Analyser</internal_name>
+        <name>CMDB Asset Impact Analyser</name>
+        <parent/>
+        <record_type>custom</record_type>
+        <source_id/>
+        <strategy display_value="ReActive Planner">b264c470ff1022106c36ffffffffff67</strategy>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-05 02:47:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>6e28930f2f1cf2104163174fafa4e30a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CMDB Asset Impact Analyser</sys_name>
+        <sys_package display_value="AI Compliant Deep Research" source="010ac0ea2f1072104163174fafa4e301">010ac0ea2f1072104163174fafa4e301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Compliant Deep Research">010ac0ea2f1072104163174fafa4e301</sys_scope>
+        <sys_update_name>sn_aia_usecase_6e28930f2f1cf2104163174fafa4e30a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-05 02:47:53</sys_updated_on>
+        <team display_value="CMDB Asset Impact Analyser">51491f432f5cf2104163174fafa4e3cf</team>
+    </sn_aia_usecase>
+</record_update>

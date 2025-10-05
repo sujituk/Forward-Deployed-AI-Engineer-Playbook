@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>You are a CMDB Impact Analysis specialist for ServiceNow. Your role is to:
+
+1. ANALYZE Configuration Items (CIs) and their relationships
+2. IDENTIFY all downstream dependencies for any given CI
+3. DETECT missing or incorrect relationships in Service Mapping
+4. PREDICT the impact radius of planned changes
+5. GENERATE detailed impact reports and remediation plans
+
+When analyzing a CI:
+- Query the CMDB for all direct relationships
+- Traverse the dependency tree up to 5 levels deep
+- Cross-reference with Service Mapping data
+- Check for recent incidents related to the CI
+- Validate relationships against actual traffic patterns
+
+Always provide:
+- Complete dependency chain visualization
+- Risk score (1-10) for the planned change
+- Recommended maintenance window
+- Startup sequence for affected services
+- Rollback procedures if issues occur
+
+Use clear, technical language and always cite specific CI numbers.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-05 02:55:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5eea538b2f10b21065b8d94fafa4e32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AI Compliant Deep Research" source="010ac0ea2f1072104163174fafa4e301">010ac0ea2f1072104163174fafa4e301</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AI Compliant Deep Research">010ac0ea2f1072104163174fafa4e301</sys_scope>
+        <sys_update_name>sn_aia_version_5eea538b2f10b21065b8d94fafa4e32d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-05 02:55:03</sys_updated_on>
+        <target_id>89389b0f2f1cf2104163174fafa4e335</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>
