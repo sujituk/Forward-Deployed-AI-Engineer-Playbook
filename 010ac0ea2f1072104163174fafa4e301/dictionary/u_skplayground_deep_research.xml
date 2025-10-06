@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="427c406a2f5072104163174fafa4e35e" extends="task" max_length="40" name="u_skplayground_deep_research" type="collection">
-        <element choice="3" label="Status" max_length="40" name="u_status" type="choice">
+        <element choice="3" display="true" label="Status" max_length="40" name="u_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
                 <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
             </choice>
         </element>
         <element label="Linked knowledge" max_length="32" name="u_linked_knowledge" reference="kb_knowledge" type="reference"/>
-        <element display="true" label="Executive Sponsor" max_length="32" name="u_executive_sponsor" reference="sys_user" type="reference"/>
+        <element label="Executive Sponsor" max_length="32" name="u_executive_sponsor" reference="sys_user" type="reference"/>
         <element label="Summary" max_length="160" name="u_summary" type="string"/>
         <element label="Due date" max_length="40" name="u_due_date" type="glide_date_time"/>
         <element choice="3" label="Regulatory driver" max_length="40" name="u_regulatory_driver" type="choice">
             <choice>
-                <element inactive_on_update="false" label="SOX" sequence="2" value="sox"/>
-                <element inactive_on_update="false" label="PCI" sequence="3" value="pci"/>
                 <element inactive_on_update="false" label="GDPR" sequence="0" value="gdpr"/>
-                <element inactive_on_update="false" label="HIPAA" sequence="1" value="hipaa"/>
+                <element inactive_on_update="false" label="SOX" sequence="2" value="sox"/>
                 <element inactive_on_update="false" label="Other" sequence="4" value="other"/>
+                <element inactive_on_update="false" label="HIPAA" sequence="1" value="hipaa"/>
+                <element inactive_on_update="false" label="PCI" sequence="3" value="pci"/>
             </choice>
         </element>
         <element choice="3" label="Risk level" max_length="40" name="u_risk_level" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
                 <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
                 <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
             </choice>
         </element>
         <element choice="3" label="Stage" max_length="40" name="u_stage" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Review" sequence="2" value="review"/>
-                <element inactive_on_update="false" label="Complete" sequence="3" value="complete"/>
-                <element inactive_on_update="false" label="Research" sequence="1" value="research"/>
                 <element inactive_on_update="false" label="Intake" sequence="0" value="intake"/>
+                <element inactive_on_update="false" label="Research" sequence="1" value="research"/>
+                <element inactive_on_update="false" label="Complete" sequence="3" value="complete"/>
             </choice>
         </element>
         <element label="Details" max_length="40" name="u_details" type="html"/>
