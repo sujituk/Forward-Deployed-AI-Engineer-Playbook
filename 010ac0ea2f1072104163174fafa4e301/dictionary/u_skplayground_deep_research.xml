@@ -6,8 +6,8 @@
                 <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
             </choice>
         </element>
-        <element display="true" label="Linked knowledge" max_length="32" name="u_linked_knowledge" reference="kb_knowledge" type="reference"/>
-        <element label="Executive Sponsor" max_length="32" name="u_executive_sponsor" reference="sys_user" type="reference"/>
+        <element label="Linked knowledge" max_length="32" name="u_linked_knowledge" reference="kb_knowledge" type="reference"/>
+        <element display="true" label="Executive Sponsor" max_length="32" name="u_executive_sponsor" reference="sys_user" type="reference"/>
         <element label="Summary" max_length="160" name="u_summary" type="string"/>
         <element label="Due date" max_length="40" name="u_due_date" type="glide_date_time"/>
         <element choice="3" label="Regulatory driver" max_length="40" name="u_regulatory_driver" type="choice">
