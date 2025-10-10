@@ -133,6 +133,8 @@ By the end of this workshop, participants will be able to:
 **Checkpoint commit**:
 `feat(app): scaffold “AI Compliant Deep Research” app (scope x_<org>_deep_research)`
 
+**DJ notes**: You do NOT need to "Publish" your app.
+
 ---
 
 ## Step 3 — Link your app to **GitHub** (source control) & branching
@@ -155,6 +157,8 @@ By the end of this workshop, participants will be able to:
 
 **Checkpoint commit**:
 `chore(git): link app to GitHub; add branch naming convention`
+
+**DJ notes**: Create a new key for this using your local environment (ie terminal on Mac). Use `ssh-keygen -t rsa -b 4096` and save it under a new name as to not override your existing key. This will create a public (.pub) and private key. In ServiceNow, search for "Credentials", find SSH Private Key type, add the content of your private key here. On Github side, look for SSH keys section under Settings. Add a new key (content of your public key file) here. Back in ServiceNow, In your Apps "Source Control" section, you can now add the ssh://git@github.... link to your repo and select the SSH credential you created to authenticate.
 
 ---
 
@@ -201,6 +205,10 @@ By the end of this workshop, participants will be able to:
 **Checkpoint commit**:
 `feat(intake): record producer + catalog/category for portal/VA discoverability`
 
+**DJ notes**: You need to create an entry using Record Producer and save it first, than you will see an option to add "variables" in that record. Variable are essentially questions. You can do the same using "Catalog Builder". If using Catalog Builder, you can configure it so your Recorder Producer item is available in one of the existing user portals (like Service Portal - ie /sp or Employee Portal - ie /esc). You may need to create a "category" and a "catalog" first. Than configure those values in Catalog Builder. To make this available in /esc portal, set the "Topic" to Employee taxonomy (for example).
+
+**DJ notes2**: When you are creating the "variables" (or Questions) for user input and mapping these to the table fields you created in Step 5, there are tricks you can use so it pulls your existing values. Its easy for fields that are references, but tricky for choice fields. For choice field like "Risk Level", use the question type should be `choice`, sub-type `dropdown (values from table)`, This will add a new tab called `Additional Details`, here you configure where to pull the values from. The table you want is **`sys_choice`** not the table you created in step 5! This table contains ALL the records for ALL the choice fields in your instance so you need to filter it. Select Label as the lookup field, and filter it for table (the one from step 5), Element (name of the risk field in that table).
+
 ---
 
 ## Step 7 — **Playbook** for staged lifecycle (Intake → Research → Review → Complete)
@@ -221,6 +229,8 @@ By the end of this workshop, participants will be able to:
 
 ([ServiceNow][12])
 
+**DJ notes**: You can review [Intro to playbooks course](https://learning.servicenow.com/lxp/en/pages/learning-course?id=learning_course&course_id=8f848432c3ccc694acc871f9d00131d3) for more details about playbooks. There is no exact setup steps here, you can be creative, make some of the activities interactive with human in the loop, some automated. For example, i set up validate fields using "Wait for condition" activity definition, and under automation it completely the activity is Risk is not empty. You can add validations for all fields. Initial triage I set to "checklist task", this requires a human to physically check the boxes (ie review) that you define. 
+
 ---
 
 ## Step 8 — **Workspace** to manage these requests
@@ -239,6 +249,10 @@ By the end of this workshop, participants will be able to:
 
 **Checkpoint commit**:
 `feat(workspace): lists, dashboard, and embedded Playbook on record page`
+
+**DJ notes**: it was tricky to find where to set the playbook in the workspace. I did this in AES Workspace Builder (Your App > User interface section > Add). Configuring lists, is fairly simple, there is a "record pages" button in the middle, and a "record details" on the left, now on the right you should be able to add a playbook in the bottom of the config, your playbook won't show up here, I picked "Globla Playbook Experience", this worked as long as the table you configured for your Playbook, and the table in this setting is the same. You also might see an error on the playbook tab on existing records (when viewing them in the Workspace), but new records you create in the Workspace should have your playbook stages/activities showing correctly.
+
+**DJ notes2**: if you want this workspace to show up in the Workspaces section of your home UI, add a new record in `sys_app_module.list` table, Link Type shold be URL with the /path (not including domain) to your workspace (you can get it from preview).
 
 ---
 
